@@ -43,7 +43,6 @@ table {
     margin-right: auto;
     max-width: 1050px;
     overflow: scroll;
-    
 }
 
 th {
@@ -53,7 +52,10 @@ th {
 
 td {
     border-top: 1px groove darkorchid;
-    border-right: 1px groove darkorchid;;
+    border-right: 1px groove darkorchid;
+    /*if a word is too long, the browser tries to render it in a single line, leading to alignment issues*/
+    /*specifying word-break can solve the issue*/
+    word-break: break-word;
 }
 
 .blank-row {
