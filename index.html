@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="banner"> HTML & CSS CHEAT SHEET</h1>
+    </header>
+
+    <main>
+
+        <h2>HTML (HyperText Markup Language)</h2>
+
+        <!--  HTML Elements-->
+
+        <section>
+            <h3>HTML Elements</h3>
+
+            <ul>
+                <li><strong>Elements</strong> &#x2794; A typical element includes an opening tag with some attributes, enclosed text content and a closing tag.</li>
+                <li><strong>&lt;Tags&gt;</strong> &#x2794; A tag is used for creating an element. The name of an HTML element is the name used in angle brackets such as &lt;p&gt; for paragraph. The end tag's name is preceded by a slash character, &lt;/p&gt;.</li>
+                <li><strong>Attributes</strong> &#x2794; An attribute extends an element, changing its behavior or providing metadata. An attribute always has the form <em>name="value"</em> (the attribute's identifier followed by its associated value).</li> 
+            </ul>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>&lt;Tag&gt; / Attribute</th>
+                        <th>Name</th>
+                        <th>Description</th>   
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="code">
+                            &lt;!DOCTYPE html&gt; <br> &lt;html&gt; &lt;/html&gt;
+                        </td>
+                        <td>Document Type Declaration <br> HTML Element</td>
+                        <td>Required as the 1st line of an HTML document (HTML 5 version). <br><br>The root of an HTML document.</td>
+                    </tr>
+    
+                    <tr>
+                        <td class="code">
+                            &lt;head&gt;
+                        </td>
+                        <td>Head element</td>
+                        <td>It contains general information about an HTML page that isn’t displayed on the page itself. This information is called metadata and includes things like the title of the HTML document and links to stylesheets.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;title&gt;
+                        </td>
+                        <td>Title Element</td>
+                        <td>It contains a text that defines the title of an HTML document. The title is displayed in the browser’s title bar or tab in which the HTML page is displayed. It can only be contained inside a document’s &lt;head&gt; element.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;body&gt;
+                        </td>
+                        <td>Body Element</td>
+                        <td>It represents the content of an HTML document. Content inside are rendered on the web browsers.</td>
+                    </tr>
+
+                    <tr class="blank-row">
+                        <td colspan= "3"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;h1&gt;-&lt;h6&gt;
+                        </td>
+                        <td>Heading Elements</td>
+                        <td>They are ordered from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;p&gt;
+                        </td>
+                        <td>Paragraph Element</td>
+                        <td>It contains and displays a block of text.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;span&gt;
+                        </td>
+                        <td>Span Element</td>
+                        <td>It  is an inline container for text and can be used to group text for styling purposes. However, as &lt;span&gt; is a generic container to separate pieces of text from a larger body of text, its use should be avoided if a more semantic element is available. </td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;div&gt;
+                        </td>
+                        <td>Div Element</td>
+                        <td>It is used as a container that divides an HTML document into sections and is short for “division”. &lt;div&gt; elements can contain flow content such as headings, paragraphs, links, images, etc.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;br&gt;
+                        </td>
+                        <td>Line Break Element</td>
+                        <td>It will create a line break in text and is especially useful where a division of text is required, like in a postal address. The line break element requires only an opening tag and must not have a closing tag.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;ol&gt;
+                        </td>
+                        <td>Ordered List Element</td>
+                        <td>It creates a list of items in sequential order. Each list item appears numbered by default.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;ul&gt;
+                        </td>
+                        <td>Unordered List Element</td>
+                        <td>It is used to create a list of items in no particular order. Each individual list item will have a bullet point by default.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;li&gt;
+                        </td>
+                        <td>List Item Element</td>
+                        <td>It creates list items inside Ordered Lists or Unordered Lists.</td>
+                    </tr>
+
+                    <tr class="blank-row">
+                        <td colspan= "3"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;img&gt;
+                        </td>
+                        <td>Image Element</td>
+                        <td>It embeds an image in the document. It is an empty element meaning it should not have a closing tag.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            src
+                        </td>
+                        <td> Source Attribute</td>
+                        <td>It contains the image / video URL and is mandatory.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            alt
+                        </td>
+                        <td>Alt Attribute</td>
+                        <td>The alternative text will be displayed if an image fails to render.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;video&gt;
+                        </td>
+                        <td>Video Element</td>
+                        <td>It embeds a media player for video playback. The <b>src</b> attribute will contain the URL to the video.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            controls
+                        </td>
+                        <td>Controls Attribute</td>
+                        <td>It will display video controls in the media player.</td>
+                    </tr>
+
+                    <tr class="blank-row">
+                        <td colspan= "3"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;a&gt;
+                        </td>
+                        <td>Anchor Element</td>
+                        <td>It is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            href
+                        </td>
+                        <td>Hyperlink Reference Attribute</td>
+                        <td>It determines the location the anchor element points to. <br><strong>URL paths</strong> in HTML can be <strong>absolute paths</strong> , like a full URL , for example: <code>https://developer.mozilla.org/en-US/docs/Learn </code> or a <strong>relative file path</strong> that links to a local file in the same folder or on the same server, for example: <code>./style.css</code>.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            target
+                        </td>
+                        <td>Target Attribute</td>
+                        <td>It specifies where a hyperlink should be opened. A target value of <strong>"_blank"</strong> will tell the browser to open the hyperlink in a new tab.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            id
+                        </td>
+                        <td>Unique ID Attribute</td>
+                        <td>Specific and unique id attributes can be assigned to different elements in order to differentiate between them. Valid id attributes should begin with a letter and should only contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.). <br>The anchor element <b>&lt;a&gt;</b> can create hyperlinks to different parts of the same HTML document using the href attribute to point to the desired location with <strong>#</strong> followed by the id of the element to link to.</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+         <!-- Semantic HTML-->
+
+        <section>
+            <h3>Semantic HTML</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>&lt;Tag&gt; / Attribute</th>
+                        <th>Name</th>
+                        <th>Description</th>   
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="code">
+                            &lt;header&gt;
+                        </td>
+                        <td>Header Element</td>
+                        <td>It  describes the content at the top of the page &lt;body&gt;. It may include a logo, navigational links or a search bar.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;nav&gt;
+                        </td>
+                        <td>Navigation Section Element</td>
+                        <td>It encapsulates the page’s navigational links. It is often placed inside the &lt;header&gt; or &lt;footer&gt;.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;main&gt;
+                        </td>
+                        <td>Main Element</td>
+                        <td>It represents the dominant content of the &lt;body&gt; of a document. </td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;footer&gt;
+                        </td>
+                        <td>Footer Element</td>
+                        <td>It includes the page’s footer content at the bottom of the &lt;body&gt;. </td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;section&gt;
+                        </td>
+                        <td>Section Element</td>
+                        <td>It defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. Generally developers will use &lt;section&gt; to define a theme for the webpage and use &lt;article&gt; to write independent content for that theme.  </td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;article&gt;
+                        </td>
+                        <td>Article Element</td>
+                        <td>It holds content that makes sense on its own such as articles, blogs, and comments.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;aside&gt;
+                        </td>
+                        <td>Aside Element</td>
+                        <td>It is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. Usually, this information would be in a sidebar or a location where it doesn’t obstruct the main piece of content. An example of this would be an article that discusses how to take care of a dog and next to the article an ad would appear advertising a dog grooming product.
+                        </td>
+                    </tr>
+
+                    <tr class="blank-row">
+                        <td colspan= "3"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;figure&gt;
+                        </td>
+                        <td>Figure Element</td>
+                        <td>It is used to encapsulate media such as an image, diagram or code snippet.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;figcaption&gt;
+                        </td>
+                        <td>Figure Caption Element</td>
+                        <td>It is used to describe the media encapsulated within the &lt;figure&gt; element. Developers will normally use &lt;figcaption&gt; within the &lt;figure&gt; element to group the media and description. This way, if a developer decides to change the position of the media, the description will follow along with it.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;audio&gt;
+                        </td>
+                        <td>Audio Element</td>
+                        <td>It is used to embed audio content into a document.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;video&gt;
+                        </td>
+                        <td>Video Embed Element</td>
+                        <td>It embeds a media player which supports video playback into the document.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            src type controls
+                        </td>
+                        <td>Source, Type, Controls Attributes</td>
+                        <td>They specify the source, type of audio / video and will display audio / video controls in the media player.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;embed&gt;
+                        </td>
+                        <td>Embed External Content Element</td>
+                        <td>It embeds external content at the specified point in the document. It is a deprecated tag and other alternatives, such as &lt;video&gt;, &lt;audio&gt; and &lt;img&gt;, should be used in its place, but is being taught for legacy purposes. </td>
+                    </tr>
+
+                    <tr class="blank-row">
+                        <td colspan= "3"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;strong&gt;
+                        </td>
+                        <td>Strong Element</td>
+                        <td>It highlights important, serious, or urgent text and browsers will normally render this highlighted text in bold by default.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="code">
+                            &lt;em&gt;
+                        </td>
+                        <td>Emphasis Element</td>
+                        <td>It emphasizes text and browsers will usually italicize the emphasized text by default.</td>
+                    </tr>
+                  
+    
+                </tbody>
+            </table>
+        </section>
+    
+</body>
+</html>
