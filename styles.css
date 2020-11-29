@@ -7,6 +7,13 @@ body {
     background-color: moccasin;
 }
 
+pre{
+    overflow-x: auto;
+    white-space: pre-wrap;
+    /* word-wrap: break-word; */
+    word-break: break-all;
+}
+
 /* Heading section*/
 
 .banner {
@@ -35,7 +42,6 @@ h3 {
 }
 
 /* Table section */
-
 table {
     border: 2px groove darkorchid;
     font-family: Arial, sans-serif;
@@ -43,7 +49,6 @@ table {
     margin-right: auto;
     max-width: 1050px;
     overflow: scroll;
-    
 }
 
 th {
@@ -54,9 +59,7 @@ th {
 td {
     border-top: 1px groove darkorchid;
     border-right: 1px groove darkorchid;
-     /*if a word is too long, the browser tries to render it in a single line, leading to alignment issues*/
-    /*specifying word-break can solve the issue*/
-    word-break: break-word;
+    /* word-break: break-word; */
 }
 
 .blank-row {
